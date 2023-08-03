@@ -1,8 +1,11 @@
 #include "main.h"
 
+int actual_prime(int n, int i);
+
 /**
  * is_prime_number - detect a prime number
  * @n: number to be detected
+ *
  * Return: 1 if prime number, otherwise 0.
  */
 
@@ -10,7 +13,7 @@ int is_prime_number(int n)
 {
 		if (n <= 1)
 			return (0);
-			return (actual_prime(n, n - 1));
+		return (actual_prime(n, n - 1));
 }
 
 /**
